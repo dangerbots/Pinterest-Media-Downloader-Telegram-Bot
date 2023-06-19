@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from telegram.ext import filters, Updater, CommandHandler, MessageHandler, RegexHandler
+from telegram.ext import filters, Updater, CommandHandler, MessageHandler
 import validators
 import mimetypes
 import os
