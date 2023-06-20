@@ -14,13 +14,13 @@ updater = Updater(token=TOKEN, use_context=True)
 def handle_start(update, context):
 	start_info = '''
 	<b>😃👋 Hi There!\nI'm a Pinterest Media Downloader bot!</b>
-\n\nI can help you download images and videos from Pinterest posts!
+\n\nI can help you download images and videos from Pinterest posts! \n\n😊 Just send me a Pin link and see the magic! 🪄
 	'''
 	context.bot.send_message(chat_id=update.effective_chat.id, text=start_info, parse_mode='HTML')
 	handle_help(update, context)
 
-def handle_help(update, context):
-  context.bot.send_message(chat_id=update.effective_chat.id, text="😊 Just send me a Pin link and see the magic! 🪄", parse_mode='HTML')
+#def handle_help(update, context):
+  #context.bot.send_message(chat_id=update.effective_chat.id, text="😊 Just send me a Pin link and see the magic! 🪄", parse_mode='HTML')
 
 def handle_links(update, context):
   pin_link = update.message.text.strip()
