@@ -9,7 +9,7 @@ from pinterest_media_downloader import PinterestMediaDownloader
 # initialisation
 mimetypes.init()
 TOKEN = os.environ['BOT_TOKEN']
-
+updater = Updater(token="6173776713:AAGIwH_jkYzaq1lVBrnwSWPPedWZryxoygs")
 # Actions
 def handle_start(update, context):
 	start_info = '''
