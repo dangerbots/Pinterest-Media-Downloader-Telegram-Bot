@@ -14,7 +14,7 @@ updater = Updater(token=TOKEN, use_context=True)
 def handle_start(update, context):
 	start_info = '''
 	<b>😃👋 Hi There!\nI'm a Pinterest Media Downloader bot!</b>
-\n\nI can help you download images and videos from Pinterest posts! \n\n😊 Just send me a Pin link and see the magic! 🪄\n\n Updates💥 [dangerbots](https://t.me/danger_bots)\n\n dev💫[ᴀɴᴏɴʏᴍᴏᴜs么ᴋɪᴅ]
+\n\nI can help you download images and videos from Pinterest posts! \n\n😊 Just send me a Pin link and see the magic! 🪄\n\n Updates💥 [dangerbots](https://t.me/danger_bots)\n\n dev💫[ᴀɴᴏɴʏᴍᴏᴜs么ᴋɪᴅ](https://t.me/danger_bots)
 	'''
 	context.bot.send_message(chat_id=update.effective_chat.id, text=start_info, parse_mode='HTML')
 	handle_help(update, context)
